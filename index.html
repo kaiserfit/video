@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube</title>
+        <link href="https://vjs.zencdn.net/7.20.1/video-js.css" rel="stylesheet" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container-fluid min-vh-100 py-4 bg-dark position-relative ">
+            
+            <img src="play.png" id="btnPlay" style="z-index: 100;cursor: pointer;" class="position-absolute start-50 translate-middle top-50" height="300" width="400" alt="">
+       
+           
+            <div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+                <video
+                id="my-video"
+                class="vjs-big-play-centered video-js"
+             
+                preload="auto"
+                data-setup="{}"
+                >
+                <!-- <source src="short-vsl.mp4"  type="video/mp4" /> -->
+                <source src="https://kaiserfit-video-bucket.s3.amazonaws.com/short-vsl.mp4"  type="video/mp4" />
+                <!-- <source src="dd.webm"  type="video/webm" /> -->
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                        >
+                    </p>
+                </video>
+            
+            
+                <script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
+                <script src="node_modules/videojs-event-tracking/dist/videojs-event-tracking.min.js"></script>
+            </div>
+
+           
+            
+            
+           
+    </div>
+</body>
+
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="index.js"></script>
+</html>
