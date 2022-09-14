@@ -44,8 +44,6 @@ player.on('tracking:seek', function(e, data) {
   
 });
 
-player.on('tracking:performance', (e, data) => console.log(data.totalDuration));
-
 
 function videoTrack(){
 
@@ -67,17 +65,7 @@ function videoTrack(){
 }
 
 
-  player.on('tracking:first-quarter', (e, data) => console.log(data))
-player.on('tracking:second-quarter', (e, data) => console.log(data))
-player.on('tracking:third-quarter', (e, data) => console.log(data))
-player.on('tracking:fourth-quarter', (e, data) => console.log(data))
 
-
-function playplayer() {
-    player.play();
-    
-
-}
 
 
 $(document).ready(function(){
